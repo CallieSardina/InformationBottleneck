@@ -84,7 +84,7 @@ def Compute_MI(XW, YV, U, eps_X, eps_Y, b_X, b_Y):
 def EDGE(X, Y, U=10, gamma=[1, 1], epsilon=[0, 0], hashing='p-stable', L_ensemble=5):
     gamma, epsilon = np.array(gamma), np.array(epsilon)
     if X.ndim == 1: X = X.reshape((-1, 1))
-    Y = torch.tensor(Y[0]) 
+
     if Y.ndim == 1:
         Y = Y.reshape((-1, 1))
     
